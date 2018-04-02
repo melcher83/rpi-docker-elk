@@ -1,25 +1,36 @@
-elasticsearch:
-  image: ind3x/rpi-elasticsearch:latest
-  command: elasticsearch -Des.network.host=0.0.0.0
-  ports:
-    - "9200:9200"
-    - "9300:9300"
+version: '3'
 
-logstash:
-  build: logstash/
-  command: logstash -f /etc/logstash/conf.d/logstash.conf
-  volumes:
-    - ./logstash/config:/etc/logstash/conf.d
-  ports:
-    - "5000:5000"
-  links:
-    - elasticsearch
+services:
 
-kibana:
-  build: kibana/
-  volumes:
-    - ./kibana/config/:/opt/kibana/config/
-  ports:
-    - "5601:5601"
-  links:
-    - elasticsearch
+  elasticsearch:
+    hostname: elasticsearch
+    image: ind3x/rpi-elasticsearch:latest
+    command: elasticsearch -Des.network.host=0.0.0.0
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+  logstash:
+    hostname: logstash
+    image: ind3x/rpi-logstash:latest
+    command: logstash -f /etc/logstash/conf.d/logstash.conf
+    volumes:
+      - /home/pi/rpi-docker-elk/logstash/config:/etc/logstash/conf.d
+    ports:
+      - "5000:5000"
+      - "514:514/udp"
+    links:
+      - elasticsearch
+  kibana:
+    hostname: kibana      
+    image: ind3x/rpi-kibana:latest
+    volumes:
+      - /home/pi/rpi-docker-elk/kibana/config/:/opt/kibana/config/
+    ports:
+      - "5601:5601"
+    links:
+      - elasticsearch
+
+networks:
+
+  elk:
+      driver: overlay
