@@ -64,3 +64,7 @@ You can get more information about how to configure ELK stack in the original [D
 *NOTE*: Configuration is not dynamically reloaded, you will need to restart the stack after any change in the configuration of a component.
 
 **Tested on Raspberry Pi 2**
+
+Additional:
+
+I have compiled and added filebeat for RPI so that you can test/monitor your RPI hosts
