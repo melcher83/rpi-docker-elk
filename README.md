@@ -36,6 +36,11 @@ You can also choose to run it in background (detached mode):
 ```bash
 $ docker-compose up -d
 ```
+Or it can be run in swarm mode possibly with a load balancer in front of the swarm:
+
+```bash
+$ docker-stack deploy -c docker-compose.yml elk
+```
 
 Now that the stack is running, you'll want to inject logs in it. The shipped logstash configuration allows you to send content via tcp:
 
