@@ -4,6 +4,8 @@ Run the latest version of the ELK (Elasticseach, Logstash, Kibana) stack with Do
 
 It will give you the ability to analyze any data set by using the searching/aggregation capabilities of Elasticseach and the visualization power of Kibana.
 
+My idea behind this fork is to have a cheap, and somewhat highly available monitoring solution that can be setdown anywhere with very little time configuring. This main branch will have monitoring only.  I have another branch I am working on to add alerting but any alerts will need to customized to an environment so I am not including it in this branch.
+
 Uses Docker images which support Raspberry Pi based on the official images:
 
 * [rpi-elasticsearch](https://hub.docker.com/r/ind3x/rpi-elasticsearch/)
