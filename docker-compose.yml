@@ -6,7 +6,7 @@ services:
     hostname: elasticsearch
     image: ind3x/rpi-elasticsearch:latest
     deploy:
-      mode: global      
+      mode: replicated     
     command: elasticsearch -Des.network.host=0.0.0.0
     ports:
       - "9200:9200"
