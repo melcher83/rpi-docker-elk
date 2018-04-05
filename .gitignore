@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 RPI-BEATS/packetbeat/logs/*
 RPI-BEATS/Filebeat/logs/*
 RPI-BEATS/Filebeat/data/*
+=======
+RPI-BEATS/packetbeat/logs/packetbeat/packetbeat
+RPI-BEATS/Filebeat/logs/filebeat/
+RPI-BEATS/Filebeat/logs/filebeat/filebeat
+>>>>>>> a613b0584ac9abdd2438ac903b6b5f956ef32dce
