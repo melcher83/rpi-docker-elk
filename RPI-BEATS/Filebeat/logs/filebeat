@@ -1,0 +1,15 @@
+2018-04-04T21:56:57.934Z	INFO	instance/beat.go:479	Home path: [/home/pi/rpi-docker-elk/RPI-BEATS/Filebeat] Config path: [/home/pi/rpi-docker-elk/RPI-BEATS/Filebeat] Data path: [/home/pi/rpi-docker-elk/RPI-BEATS/Filebeat/data] Logs path: [/home/pi/rpi-docker-elk/RPI-BEATS/Filebeat/logs]
+2018-04-04T21:56:57.935Z	INFO	instance/beat.go:486	Beat UUID: c7389796-69e1-469f-9e7e-2bebc660135a
+2018-04-04T21:56:57.935Z	INFO	instance/beat.go:222	Setup Beat: filebeat; Version: 7.0.0-alpha1
+2018-04-04T21:56:57.937Z	INFO	elasticsearch/client.go:145	Elasticsearch url: http://10.1.8.20:9200
+2018-04-04T21:56:57.938Z	INFO	pipeline/module.go:76	Beat name: docker2
+2018-04-04T21:56:57.939Z	ERROR	fileset/modules.go:101	Not loading modules. Module directory not found: /home/pi/rpi-docker-elk/RPI-BEATS/Filebeat/module
+2018-04-04T21:56:57.940Z	INFO	instance/beat.go:312	filebeat start running.
+2018-04-04T21:56:57.940Z	INFO	[monitoring]	log/log.go:97	Starting metrics logging every 30s
+2018-04-04T21:56:57.940Z	INFO	registrar/registrar.go:112	Loading registrar data from /home/pi/rpi-docker-elk/RPI-BEATS/Filebeat/data/registry
+2018-04-04T21:56:57.947Z	INFO	registrar/registrar.go:123	States Loaded from registrar: 20
+2018-04-04T21:56:57.947Z	INFO	crawler/crawler.go:48	Loading Inputs: 1
+2018-04-04T21:56:57.948Z	INFO	crawler/crawler.go:82	Loading and starting Inputs completed. Enabled inputs: 0
+2018-04-04T21:56:57.948Z	INFO	cfgfile/reload.go:127	Config reloader started
+2018-04-04T21:56:57.948Z	INFO	cfgfile/reload.go:219	Loading of config files completed.
+2018-04-04T21:57:27.946Z	INFO	[monitoring]	log/log.go:124	Non-zero metrics in the last 30s	{"monitoring": {"metrics": {"beat":{"cpu":{"system":{"ticks":30,"time":{"ms":38}},"total":{"ticks":80,"time":{"ms":96},"value":0},"user":{"ticks":50,"time":{"ms":58}}},"info":{"ephemeral_id":"057a6605-4f16-49d5-acc5-48699ccaf9d6","uptime":{"ms":30066}},"memstats":{"gc_next":4473924,"memory_alloc":1972024,"memory_total":1972024,"rss":15192064}},"filebeat":{"harvester":{"open_files":0,"running":0}},"libbeat":{"config":{"module":{"running":0},"reloads":1},"output":{"type":"elasticsearch"},"pipeline":{"clients":0,"events":{"active":0}}},"registrar":{"states":{"current":0}},"system":{"cpu":{"cores":4},"load":{"1":0.18,"15":0.45,"5":0.26,"norm":{"1":0.045,"15":0.1125,"5":0.065}}}}}}
