@@ -5,8 +5,9 @@ services:
   elasticsearch:
     hostname: elasticsearch
     image: ind3x/rpi-elasticsearch:latest
-    deploy:
-      mode: replicated     
+    volumes:
+      - /mnt/data:/usr/share/elasticsearch/data
+
     command: elasticsearch -Des.network.host=0.0.0.0
     ports:
       - "9200:9200"

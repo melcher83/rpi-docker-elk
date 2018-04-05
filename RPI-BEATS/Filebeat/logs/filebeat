@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2018-04-04T21:56:57.934Z	INFO	instance/beat.go:479	Home path: [/home/pi/rpi-docker-elk/RPI-BEATS/Filebeat] Config path: [/home/pi/rpi-docker-elk/RPI-BEATS/Filebeat] Data path: [/home/pi/rpi-docker-elk/RPI-BEATS/Filebeat/data] Logs path: [/home/pi/rpi-docker-elk/RPI-BEATS/Filebeat/logs]
 2018-04-04T21:56:57.935Z	INFO	instance/beat.go:486	Beat UUID: c7389796-69e1-469f-9e7e-2bebc660135a
 2018-04-04T21:56:57.935Z	INFO	instance/beat.go:222	Setup Beat: filebeat; Version: 7.0.0-alpha1
@@ -13,3 +14,31 @@
 2018-04-04T21:56:57.948Z	INFO	cfgfile/reload.go:127	Config reloader started
 2018-04-04T21:56:57.948Z	INFO	cfgfile/reload.go:219	Loading of config files completed.
 2018-04-04T21:57:27.946Z	INFO	[monitoring]	log/log.go:124	Non-zero metrics in the last 30s	{"monitoring": {"metrics": {"beat":{"cpu":{"system":{"ticks":30,"time":{"ms":38}},"total":{"ticks":80,"time":{"ms":96},"value":0},"user":{"ticks":50,"time":{"ms":58}}},"info":{"ephemeral_id":"057a6605-4f16-49d5-acc5-48699ccaf9d6","uptime":{"ms":30066}},"memstats":{"gc_next":4473924,"memory_alloc":1972024,"memory_total":1972024,"rss":15192064}},"filebeat":{"harvester":{"open_files":0,"running":0}},"libbeat":{"config":{"module":{"running":0},"reloads":1},"output":{"type":"elasticsearch"},"pipeline":{"clients":0,"events":{"active":0}}},"registrar":{"states":{"current":0}},"system":{"cpu":{"cores":4},"load":{"1":0.18,"15":0.45,"5":0.26,"norm":{"1":0.045,"15":0.1125,"5":0.065}}}}}}
+=======
+2018-04-05T01:38:24.378Z	INFO	instance/beat.go:479	Home path: [/home/pi/rpi-docker-elk/RPI-BEATS/Filebeat] Config path: [/home/pi/rpi-docker-elk/RPI-BEATS/Filebeat] Data path: [/home/pi/rpi-docker-elk/RPI-BEATS/Filebeat/data] Logs path: [/home/pi/rpi-docker-elk/RPI-BEATS/Filebeat/logs]
+2018-04-05T01:38:24.428Z	INFO	instance/beat.go:486	Beat UUID: c7389796-69e1-469f-9e7e-2bebc660135a
+2018-04-05T01:38:24.428Z	INFO	instance/beat.go:222	Setup Beat: filebeat; Version: 7.0.0-alpha1
+2018-04-05T01:38:24.429Z	INFO	elasticsearch/client.go:145	Elasticsearch url: http://10.1.8.20:9200
+2018-04-05T01:38:24.436Z	INFO	pipeline/module.go:76	Beat name: docker1
+2018-04-05T01:38:24.437Z	ERROR	fileset/modules.go:101	Not loading modules. Module directory not found: /home/pi/rpi-docker-elk/RPI-BEATS/Filebeat/module
+2018-04-05T01:38:24.438Z	INFO	instance/beat.go:312	filebeat start running.
+2018-04-05T01:38:24.439Z	INFO	registrar/registrar.go:112	Loading registrar data from /home/pi/rpi-docker-elk/RPI-BEATS/Filebeat/data/registry
+2018-04-05T01:38:24.441Z	INFO	registrar/registrar.go:123	States Loaded from registrar: 20
+2018-04-05T01:38:24.441Z	INFO	crawler/crawler.go:48	Loading Inputs: 1
+2018-04-05T01:38:24.438Z	INFO	[monitoring]	log/log.go:97	Starting metrics logging every 30s
+2018-04-05T01:38:24.490Z	INFO	log/input.go:111	Configured paths: [/var/log/*.log]
+2018-04-05T01:38:24.490Z	INFO	input/input.go:87	Starting input of type: log; ID: 11204088409762598069 
+2018-04-05T01:38:24.491Z	INFO	crawler/crawler.go:82	Loading and starting Inputs completed. Enabled inputs: 1
+2018-04-05T01:38:24.491Z	INFO	cfgfile/reload.go:127	Config reloader started
+2018-04-05T01:38:24.492Z	INFO	cfgfile/reload.go:219	Loading of config files completed.
+2018-04-05T01:38:24.516Z	INFO	log/harvester.go:222	Harvester started for file: /var/log/kern.log
+2018-04-05T01:38:24.520Z	INFO	log/harvester.go:222	Harvester started for file: /var/log/boot.log
+2018-04-05T01:38:24.528Z	INFO	log/harvester.go:222	Harvester started for file: /var/log/daemon.log
+2018-04-05T01:38:24.531Z	INFO	log/harvester.go:222	Harvester started for file: /var/log/user.log
+2018-04-05T01:38:24.533Z	INFO	log/harvester.go:222	Harvester started for file: /var/log/auth.log
+2018-04-05T01:38:24.853Z	INFO	elasticsearch/client.go:690	Connected to Elasticsearch version 2.4.0
+2018-04-05T01:38:24.871Z	INFO	template/load.go:73	Template already exists and will not be overwritten.
+2018-04-05T01:38:54.454Z	INFO	[monitoring]	log/log.go:124	Non-zero metrics in the last 30s	{"monitoring": {"metrics": {"beat":{"cpu":{"system":{"ticks":570,"time":{"ms":570}},"total":{"ticks":2660,"time":{"ms":2660},"value":2660},"user":{"ticks":2090,"time":{"ms":2090}}},"info":{"ephemeral_id":"74fba7d3-8fbe-4e33-9cf7-267ee9bb6d07","uptime":{"ms":30339}},"memstats":{"gc_next":6905456,"memory_alloc":4941800,"memory_total":22795816,"rss":20918272}},"filebeat":{"events":{"active":4118,"added":7481,"done":3363},"harvester":{"open_files":5,"running":5,"started":5}},"libbeat":{"config":{"module":{"running":0},"reloads":1},"output":{"events":{"acked":3348,"active":50,"batches":68,"total":3398},"read":{"bytes":591418},"type":"elasticsearch","write":{"bytes":1433346}},"pipeline":{"clients":1,"events":{"active":4117,"filtered":15,"published":7464,"retry":50,"total":7480},"queue":{"acked":3348}}},"registrar":{"states":{"current":20,"update":3363},"writes":79},"system":{"cpu":{"cores":4},"load":{"1":8.59,"15":4.44,"5":6.24,"norm":{"1":2.1475,"15":1.11,"5":1.56}}}}}}
+2018-04-05T01:39:24.450Z	INFO	[monitoring]	log/log.go:124	Non-zero metrics in the last 30s	{"monitoring": {"metrics": {"beat":{"cpu":{"system":{"ticks":1350,"time":{"ms":780}},"total":{"ticks":5540,"time":{"ms":2890},"value":5540},"user":{"ticks":4190,"time":{"ms":2110}}},"info":{"ephemeral_id":"74fba7d3-8fbe-4e33-9cf7-267ee9bb6d07","uptime":{"ms":60340}},"memstats":{"gc_next":6237504,"memory_alloc":3126936,"memory_total":39497880,"rss":688128}},"filebeat":{"events":{"active":-1,"added":5093,"done":5094},"harvester":{"open_files":5,"running":5}},"libbeat":{"config":{"module":{"running":0}},"output":{"events":{"acked":5094,"batches":102,"total":5094},"read":{"bytes":899109},"write":{"bytes":2065491}},"pipeline":{"clients":1,"events":{"active":4117,"published":5094,"total":5094},"queue":{"acked":5094}}},"registrar":{"states":{"current":20,"update":5094},"writes":102},"system":{"load":{"1":8.92,"15":4.6,"5":6.54,"norm":{"1":2.23,"15":1.15,"5":1.635}}}}}}
+2018-04-05T01:39:54.450Z	INFO	[monitoring]	log/log.go:124	Non-zero metrics in the last 30s	{"monitoring": {"metrics": {"beat":{"cpu":{"system":{"ticks":2070,"time":{"ms":720}},"total":{"ticks":8190,"time":{"ms":2640},"value":8190},"user":{"ticks":6120,"time":{"ms":1920}}},"info":{"ephemeral_id":"74fba7d3-8fbe-4e33-9cf7-267ee9bb6d07","uptime":{"ms":90340}},"memstats":{"gc_next":6263584,"memory_alloc":5214560,"memory_total":54345312}},"filebeat":{"events":{"added":4546,"done":4546},"harvester":{"open_files":5,"running":5}},"libbeat":{"config":{"module":{"running":0}},"output":{"events":{"acked":4546,"batches":91,"total":4546},"read":{"bytes":802382},"write":{"bytes":1764613}},"pipeline":{"clients":1,"events":{"active":4117,"published":4546,"total":4546},"queue":{"acked":4546}}},"registrar":{"states":{"current":20,"update":4546},"writes":91},"system":{"load":{"1":9.07,"15":4.74,"5":6.79,"norm":{"1":2.2675,"15":1.185,"5":1.6975}}}}}}
+>>>>>>> 800b9a3e80b3a0f672a1aefc0bbb035eff022476
