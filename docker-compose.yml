@@ -6,7 +6,7 @@ services:
     hostname: elasticsearch
     image: ind3x/rpi-elasticsearch:latest
     volumes:
-      - /mnt:/usr/share/elasticsearchdata
+      - /mnt/data:/usr/share/elasticsearch/data
 
     command: elasticsearch -Des.network.host=0.0.0.0
     ports:
