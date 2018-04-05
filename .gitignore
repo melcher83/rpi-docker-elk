@@ -1,2 +1,3 @@
-RPI-BEATS/packetbeat/logs/packetbeat/
+RPI-BEATS/packetbeat/logs/packetbeat/packetbeat
 RPI-BEATS/Filebeat/logs/filebeat/
+RPI-BEATS/Filebeat/logs/filebeat/filebeat
