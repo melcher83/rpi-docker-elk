@@ -19,7 +19,7 @@ services:
       - /home/pi/rpi-docker-elk/logstash/config:/etc/logstash/conf.d
     ports:
       - "5000:5000"
-      - "514:514"
+      - "514:514/UDP"
     links:
       - elasticsearch
   kibana:
