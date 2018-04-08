@@ -33,7 +33,7 @@ spec:
 
 
       containers:
-      - image: hypriot/rpi-traefik
+      - image: melcher83/rpi-traefik:4.8.18
         name: traefik-ingress-controller
         ports:
         - name: http
