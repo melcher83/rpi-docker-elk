@@ -1,0 +1,14 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: kibana-volume
+  labels:
+    type: local
+spec:
+  storageClassName: kibana
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: "/home/pi/rpi-docker-elk/kibana/config/"
