@@ -27,6 +27,7 @@ spec:
           ]
     spec:
       terminationGracePeriodSeconds: 60
+      serviceAccount: traefik
       hostNetwork: true
       nodeSelector:
         kubernetes.io/hostname: "pi1"
