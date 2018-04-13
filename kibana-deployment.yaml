@@ -19,7 +19,7 @@ spec:
         io.kompose.service: kibana
     spec:
       containers:
-      - image: ind3x/rpi-kibana:latest
+      - image: melcher83/rpi-kibana:4.12.18
         name: kibana
         ports:
         - containerPort: 5601

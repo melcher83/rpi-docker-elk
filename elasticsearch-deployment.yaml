@@ -18,11 +18,13 @@ spec:
       labels:
         io.kompose.service: elasticsearch
     spec:
+      securityContext:
+        fsGroup: 1000
       containers:
       - args:
         - elasticsearch
         - -Des.network.host=0.0.0.0
-        image: ind3x/rpi-elasticsearch:latest
+        image: melcher83/rpi-elasticsearch:4.11.18.3
         name: elasticsearch
         ports:
         - containerPort: 9200
@@ -31,7 +33,6 @@ spec:
         volumeMounts:
         - mountPath: /usr/share/elasticsearch/data
           name: elasticsearch-claim0
-      restartPolicy: Always
       volumes:
       - name: elasticsearch-claim0
         persistentVolumeClaim:
