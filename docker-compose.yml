@@ -32,7 +32,3 @@ services:
     links:
       - elasticsearch
 
-networks:
-
-  elk:
-      driver: overlay
