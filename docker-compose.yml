@@ -3,6 +3,7 @@ version: '3'
 services:
 
   elasticsearch:
+    restart: always
     hostname: elasticsearch
     image: ind3x/rpi-elasticsearch:latest
     volumes:
@@ -12,6 +13,7 @@ services:
       - "9200:9200"
       - "9300:9300"
   logstash:
+    restart: always
     hostname: logstash
     image: ind3x/rpi-logstash:latest
     command: logstash -f /etc/logstash/conf.d/logstash.conf
@@ -23,6 +25,7 @@ services:
     links:
       - elasticsearch
   kibana:
+    restart: always
     hostname: kibana
     image: ind3x/rpi-kibana:latest
     volumes:
